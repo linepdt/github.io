@@ -1,7 +1,25 @@
 body {
+    font-family: "微软雅黑", sans-serif;
+    color: #202020;
+    background-color: #FCFCFC;
     margin-left: 10%;
-    width: 80%;
+    margin-right: 10%;
+}
+span {
+    font-size: 14px;
 }
 p {
     text-indent: 2em;
+    font-size: 14px;
+}
+a {
+    font-size: 14px;
+}
+#gen_bottom {
+    color: #646f85;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px
 }
