@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>千维计算器</title>
+    <script src="js/flexible.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            background: #FFF;
+            font-size: .28rem;
+        }
+
+        .line {
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .line img {
+            width: .8rem;
+        }
+
+        .selector {
+            text-align: center;
+            width: 1.3rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body style="font-size: 16px;">
+    <div id="container">
+        <div class="line">
+            <div class="selector length">
+                <img src="icon/ic_length_p.png" alt="">
+                <div>长度</div>
+            </div>
+            <div class="selector area">
+                <img src="icon/ic_area_p.png" alt="">
+                <div>面积</div>
+            </div>
+            <div class="selector volume">
+                <img src="icon/ic_volume_p.png" alt="">
+                <div>体积</div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="selector weight">
+                <img src="icon/ic_weight_p.png" alt="">
+                <div>质量</div>
+            </div>
+            <div class="selector angle">
+                <img src="icon/ic_angle_p.png" alt="">
+                <div>角度</div>
+            </div>
+            <div class="selector time">
+                <img src="icon/ic_time_p.png" alt="">
+                <div>时间</div>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="selector speed">
+                <img src="icon/ic_speed_p.png" alt="">
+                <div>速度</div>
+            </div>
+            <div class="selector light">
+                <img src="icon/ic_light_p.png" alt="">
+                <div>亮度</div>
+            </div>
+            <div class="selector data">
+                <img src="icon/ic_data_p.png" alt="">
+                <div>数据存储</div>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="selector density">
+                <img src="icon/ic_density_p.png" alt="">
+                <div>密度</div>
+            </div>
+            <div class="selector press">
+                <img src="icon/ic_press_p.png" alt="">
+                <div>压强</div>
+            </div>
+            <div class="selector power">
+                <img src="icon/ic_power_p.png" alt="">
+                <div>功率</div>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="selector current">
+                <img src="icon/ic_current_p.png" alt="">
+                <div>电流</div>
+            </div>
+            <div class="selector voltage">
+                <img src="icon/ic_voltage_p.png" alt="">
+                <div>电压</div>
+            </div>
+            <div class="selector resistance">
+                <img src="icon/ic_resistance_p.png" alt="">
+                <div>电阻</div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="selector force">
+                <img src="icon/ic_force_p.png" alt="">
+                <div>力</div>
+            </div>
+            <div class="selector torque">
+                <img src="icon/ic_torque_p.png" alt="">
+                <div>力矩</div>
+            </div>
+            <div class="selector heat">
+                <img src="icon/ic_heat_p.png" alt="">
+                <div>功能热</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".length").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "length.html";
+        });
+        document.querySelector(".area").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "area.html";
+        });
+        document.querySelector(".volume").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "volume.html";
+        });
+        document.querySelector(".weight").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "weight.html";
+        });
+        document.querySelector(".angle").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "angle.html";
+        });
+        document.querySelector(".time").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "time.html";
+        });
+        document.querySelector(".speed").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "speed.html";
+        });
+        /*document.querySelector(".temperature").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "temperature.html";
+        });*/
+        document.querySelector(".light").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "light.html";
+        });
+        document.querySelector(".data").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "data.html";
+        });
+        document.querySelector(".density").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "density.html";
+        });
+        document.querySelector(".press").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "press.html";
+        });
+        document.querySelector(".power").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "power.html";
+        });
+        document.querySelector(".current").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "current.html";
+        });
+        document.querySelector(".voltage").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "voltage.html";
+        });
+        document.querySelector(".resistance").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "resistance.html";
+        });
+        document.querySelector(".force").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "force.html";
+        });
+        document.querySelector(".torque").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "torque.html";
+        });
+        document.querySelector(".heat").addEventListener("click",function () {
+            location.href = location.href.split("calculator.html")[0] + "heat.html";
+        });
+
+    </script>
+</body>
+</html>
