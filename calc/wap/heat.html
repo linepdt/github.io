@@ -2,107 +2,12 @@
 <html lang="en" style="font-size: 50px;" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
-    <meta name="keyword" content="计算器,功能热,科学计算器,单位换算,单位转换,单位转换器">
+    <meta name="keyword" content="计算器,热量,科学计算器,单位换算,单位转换,单位转换器">
     <link href="../../default.css" type="text/css" rel="stylesheet" />
+    <link href="calc.css" type="text/css" rel="stylesheet" />
     <script src="js/vue.min.js"></script>
     <script src="js/flexible.min.js"></script>
-    <title>功能热</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        #inputArea {
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-            background: #FFF;
-            z-index: 10;
-        }
-
-        #inputArea.line {
-            font-size: .45rem;
-        }
-
-        #inputArea.line input {
-            font-size: .45rem;
-        }
-
-        .line {
-            position: relative;
-            padding: .4rem;
-            /*height: 1.6rem;*/
-            box-sizing: border-box;
-            border-bottom: #DBDBDB .02rem solid;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            text-align: right;
-            font-size: .36rem;
-        }
-
-        #inputArea .left {
-            font-weight: bold;
-        }
-
-        .line .left {
-            line-height: 1;
-            font-weight: normal;
-            color: #1178E6;
-        }
-
-        .line .right {
-            width: 74%;
-        }
-
-        .line .number {
-            line-height: 1;
-            color: #686868;
-        }
-
-        .line input {
-            font-size: .32rem;
-            border: none;
-            line-height: 1;
-            color: #F7886C;
-            text-align: right;
-            outline: none;
-            display: block;
-            width: 100%;
-        }
-
-        .line input::-webkit-input-placeholder {
-            color: #c4c4c6;
-        }
-
-        .line input:-moz-placeholder {
-            color: #c4c4c6;
-        }
-
-        .line input::-moz-placeholder {
-            color: #c4c4c6;
-        }
-
-        .line input:-ms-input-placeholder {
-            color: #c4c4c6;
-        }
-
-        .line .right .unit {
-            position: absolute;
-            right: .4rem;
-            bottom: .14rem;
-            line-height: .8;
-            font-size: .32rem;
-            color: #c4c4c6;
-        }
-
-        #container {
-            padding-top: 1.4rem;
-            overflow: hidden;
-        }
-    </style>
+    <title>热量</title>
 </head>
 <body style="font-size: 16px;">
 <div id="app">

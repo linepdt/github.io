@@ -1,7 +1,6 @@
 var json = [
     {
         "symbol": "km",
-        "alias": "公里",
         "ratio": 1000,
         "ename": "kilometer",
         "name": "千米",

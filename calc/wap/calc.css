@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#inputArea {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #FFF;
+    z-index: 10;
+}
+
+#inputArea.line {
+    font-size: .45rem;
+}
+
+#inputArea.line input {
+    font-size: .45rem;
+}
+
+.line {
+    position: relative;
+    padding: .4rem;
+    box-sizing: border-box;
+    border-bottom: #DBDBDB .02rem solid;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: right;
+    font-size: .36rem;
+}
+
+#inputArea .left {
+    font-weight: bold;
+}
+
+.line .left {
+    line-height: 1;
+    font-weight: normal;
+    color: #1178E6;
+}
+
+.line .right {
+    width: 74%;
+}
+
+.line .number {
+    line-height: 1;
+    color: #686868;
+}
+
+.line input {
+    font-size: .32rem;
+    border: none;
+    line-height: 1;
+    color: #F7886C;
+    text-align: right;
+    outline: none;
+    display: block;
+    width: 100%;
+}
+
+.line input::-webkit-input-placeholder {
+    color: #c4c4c6;
+}
+
+.line input:-moz-placeholder {
+    color: #c4c4c6;
+}
+
+.line input::-moz-placeholder {
+    color: #c4c4c6;
+}
+
+.line input:-ms-input-placeholder {
+    color: #c4c4c6;
+}
+
+.line .right .unit {
+    position: absolute;
+    right: .4rem;
+    bottom: .14rem;
+    line-height: .8;
+    font-size: .32rem;
+    color: #c4c4c6;
+}
+
+#container {
+    padding-top: 1.4rem;
+    overflow: hidden;
+}
