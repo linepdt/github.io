@@ -36,7 +36,7 @@
         </div>
         <input type="password" id="input_password" name="input_password"><br><br>
         <input type="hidden" id="password" name="password">
-        <input type="hidden" id="appcode" name="appcode" value="mathcalc">
+        <input type="hidden" id="appcode" name="appcode" value="scancode">
         <!-- 提交按钮 -->
         <button type="submit" style="width: 100px;">注销</button>
 
@@ -46,7 +46,7 @@
         function doLogout() {
             let inputPwd = document.getElementById('input_password');
             let password = document.getElementById('password');
-            password.value = md5('unitconverter' + inputPwd.value);
+            password.value = md5('qrcode' + inputPwd.value);
             //可以校验内容，返回布尔值给表单的onsubmit属性提交信息，不通过就阻止提交
             return true;
         }
