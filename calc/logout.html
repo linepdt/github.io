@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账户注销</title>
+    <link href="../default.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> <!--引入jQuery库-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js"></script> <!--引入MD5加密算法库-->
+
+    <style>
+         .formLabel {
+             width: 80px; /* 设置label的宽度 */
+             display: inline-block; /* 让label水平显示 */
+             text-align: right; /* 右对齐文本内容 */
+         }
+
+    </style>
+</head>
+<body>
+<div style="text-align: center;">
+    <br><br>
+    <h2>
+        账户注销
+    </h2>
+    <!-- 定义一个表单 -->
+    <form action="http://lineying.cn/cloud/api/logoutweb" method="post">
+        <div class="formLabel">
+        <!-- 输入用户名字段 -->
+        <label for="username">用户名: </label>
+        </div>
+        <input type="text" id="username" name="username"><br><br>
+
+        <div class="formLabel">
+        <label for="password">密码: </label>
+        </div>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- 提交按钮 -->
+        <button type="submit" style="width: 100px;">注销</button>
+
+    </form>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#loginForm').on('submit', function(e) { //当表单被提交时触发事件
+                e.preventDefault(); //阻止默认的表单提交行为
+
+                var username = $('#username').val(); //获取输入的用户名
+                var password = md5($('#password').val()); //使用MD5对输入的密码进行加密
+
+                $.ajax({
+                    url: '/submit', //设置提交地址
+                    dataType: 'json', //指定返回数据类型为JSON格式
+                    type: 'POST', //指定HTTP请求方法为POST
+                    data: {
+                        appcode: 'mathcalc',
+                        username: username,
+                        password: password
+                    },
+                    success: function(response) {
+                        console.log("注销成功！");
+                        //在这里添加其他操作或页面跳转等
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("注销失败：", error);
+                        //在这里添加错误处理逻辑
+                    }
+                });
+            });
+        });
+    </script>
+</div>
+
+</body>
+</html>

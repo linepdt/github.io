@@ -1,10 +1,12 @@
 body {
+    word-wrap: break-word;
     font-family: "微软雅黑", sans-serif;
     color: #202020;
     background-color: #FCFCFC;
     margin-left: 10%;
     margin-right: 10%;
 }
+
 span {
     font-size: 14px;
 }
